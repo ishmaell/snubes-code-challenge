@@ -1,0 +1,29 @@
+header {
+  @apply h-[70px] bg-white;
+}
+
+header .container {
+  @apply m-auto h-[70px] flex justify-around items-center;
+}
+
+header nav {
+  
+}
+
+header nav ul {
+  @apply flex gap-10;
+}
+
+header nav li {}
+
+header nav li a {
+  @apply text-gray-500 text-base;
+}
+
+header nav li a.has-menu {
+  @apply flex items-center gap-2
+}
+
+header nav li a.has-menu svg polyline {
+  @apply stroke-gray-500 
+}
