@@ -5,8 +5,10 @@ header {
 
 header .container {
   @apply  min-w-[100%] m-auto h-[50px] px-3 flex justify-between items-center
-  lg:justify-between lg:h-[70px]
-  lg:min-w-[1024px];
+  lg:justify-between 
+  lg:h-[70px]
+  lg:min-w-[1024px]
+  lg:px-0;
 }
 
 header .main-logo {
