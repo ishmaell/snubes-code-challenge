@@ -1,16 +1,19 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
+import logoText from '../assets/images/logo-text.svg';
 import { NavLink } from 'react-router-dom';
 import { GrDown } from 'react-icons/gr';
+import { FiMenu } from 'react-icons/fi';
 
 const Header: React.FC = () => {
   return (
     <header>
       <div className="container">
         <div className="logo">
-          <img src={logo} alt="Snubes" />
+          <img className="main-logo" src={logo} alt="Snubes" />
+          <img className="mobile-logo" src={logoText} alt="Snubes" />
         </div>
-        <nav>
+        <nav className="main-nav">
           <ul>
             <li>
               <NavLink to="./">About Us</NavLink>
@@ -39,6 +42,9 @@ const Header: React.FC = () => {
             </li>
           </ul>
         </nav>
+        <div className="hamburger-menu">
+          <FiMenu />
+        </div>
       </div>
     </header>
   );

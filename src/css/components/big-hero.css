@@ -1,0 +1,43 @@
+.big-hero {
+  @apply h-[506px] bg-red-100 bg-hero-bg bg-right text-snubes-dark-gray;
+}
+
+.big-hero .container {
+  @apply flex justify-start gap-10 items-center h-full;
+}
+
+.big-hero .cta-card {
+  @apply bg-white h-[461px] w-[614px] rounded-md p-8 text-center;
+}
+
+.big-hero .cta-card h1 {
+  @apply text-[1.75rem] font-bold text-center text-snubes-dark-gray mb-3;
+}
+
+.big-hero .cta-card p {
+  @apply text-[1.125rem] text-center text-snubes-dark-gray;
+}
+
+.big-hero .stats {
+  @apply text-white self-end mb-10;
+}
+
+.big-hero .stats-header {
+  @apply mb-5 text-[1.125rem];
+}
+
+.big-hero .stats-info {
+  @apply grid grid-cols-4 gap-10 -ml-8;
+}
+
+.big-hero .stats-info-item {
+  @apply text-center;
+}
+
+.big-hero .stats-info-item h3 {
+  @apply font-bold text-[2rem];
+}
+
+.big-hero .stats-info-item span {
+  @apply font-normal block text-[1.125rem];
+}

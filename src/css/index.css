@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./components/big-hero.css";
 @import "./components/header.css";
 @import "./layout/layout.css";
 
@@ -12,8 +13,12 @@
 }
 
 body {
-  @apply bg-gray-100;
+  @apply bg-gray-100 text-snubes-dark-gray;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
 }

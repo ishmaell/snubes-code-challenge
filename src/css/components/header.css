@@ -1,29 +1,51 @@
 header {
-  @apply h-[70px] bg-white;
+  @apply h-[50px] bg-white
+  lg:h-[70px];
 }
 
 header .container {
-  @apply m-auto h-[70px] flex justify-around items-center;
+  @apply  min-w-[100%] m-auto h-[50px] px-3 flex justify-between items-center
+  lg:justify-between 
+  lg:h-[70px]
+  lg:min-w-[1024px]
+  lg:px-0;
 }
 
-header nav {
-  
+header .main-logo {
+@apply hidden lg:block
 }
 
-header nav ul {
+header .mobile-logo {
+  @apply block lg:hidden
+}
+
+header .main-nav {
+  @apply hidden lg:block;
+}
+
+header .main-nav ul {
   @apply flex gap-10;
 }
 
-header nav li {}
+header .main-nav li {}
 
-header nav li a {
+header .main-nav li a {
   @apply text-gray-500 text-base;
 }
 
-header nav li a.has-menu {
+header .main-nav li a.has-menu {
   @apply flex items-center gap-2
 }
 
-header nav li a.has-menu svg polyline {
+header .main-nav li a.has-menu svg polyline {
   @apply stroke-gray-500 
+}
+
+header .hamburger-menu {
+  @apply block h-[35px] w-[40px]
+  lg:hidden;
+}
+
+header .hamburger-menu svg {
+  @apply h-full w-full stroke-gray-400;
 }
