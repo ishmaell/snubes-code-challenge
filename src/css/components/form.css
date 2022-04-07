@@ -1,0 +1,22 @@
+.form-group {
+  @apply mb-4 relative flex items-center gap-2;
+}
+
+.form-group label {
+  @apply block w-[120px] text-snubes-dark-gray text-[1.125rem];
+}
+.input {
+  @apply h-[3rem] w-full border-1 px-4 text-[1.125rem] outline-0 rounded;
+}
+
+.input.hasIcon {
+  @apply pr-12
+}
+
+.input-error {
+  @apply border-red-500;
+}
+
+.error-message {
+  @apply text-red-500 px-1 text-sm absolute left-0 -bottom-6;
+}
