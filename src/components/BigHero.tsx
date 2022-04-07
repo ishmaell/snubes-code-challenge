@@ -1,4 +1,5 @@
 import React from 'react';
+import Input from './Input';
 
 const BigHero: React.FC = () => {
   return (
@@ -7,6 +8,32 @@ const BigHero: React.FC = () => {
         <div className="cta-card">
           <h1>Find inbound call centers for your company</h1>
           <p>Use our AI and Big Data driven call center sourcing solution</p>
+          <div className="cta-card-form">
+            <Input
+              classes="input"
+              type="text"
+              label="Company"
+              placeholder="Company"
+            />
+            <Input
+              classes="input"
+              type="text"
+              label="Name"
+              placeholder="Full name"
+            />
+            <Input
+              classes="input"
+              type="text"
+              label="Phone"
+              placeholder="+49"
+            />
+            <Input
+              classes="input"
+              type="text"
+              label="E-mail"
+              placeholder="name@mail.com"
+            />
+          </div>
         </div>
         <div className="stats">
           <h2 className="stats-header">

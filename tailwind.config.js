@@ -5,6 +5,9 @@ module.exports = {
       backgroundImage: {
         'hero-bg': "url('/src/assets/images/big-hero.png')",
       },
+      borderWidth: {
+        1: "1px",
+      },
       colors: {
         "snubes-dark-gray": "#445566",
       }

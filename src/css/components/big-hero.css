@@ -7,15 +7,19 @@
 }
 
 .big-hero .cta-card {
-  @apply bg-white h-[461px] w-[614px] rounded-md p-8 text-center;
+  @apply bg-white h-[461px] w-[614px] rounded-md py-5 px-8 text-center;
 }
 
 .big-hero .cta-card h1 {
-  @apply text-[1.75rem] font-bold text-center text-snubes-dark-gray mb-3;
+  @apply text-[1.75rem] font-bold text-center text-snubes-dark-gray mb-2;
 }
 
 .big-hero .cta-card p {
-  @apply text-[1.125rem] text-center text-snubes-dark-gray;
+  @apply text-[1.125rem] text-center mb-8;
+}
+
+.big-hero .cta-card-form {
+  @apply pr-20;
 }
 
 .big-hero .stats {
