@@ -1,7 +1,9 @@
 import FormGroup from './FormGroup';
+import PhoneInput from 'react-phone-input-2';
 
 interface InputProps {
   type: 'text' | 'password' | 'email';
+  phone?: boolean;
   placeholder?: string;
   label?: string;
   classes?: string;
@@ -14,17 +16,24 @@ interface InputProps {
 }
 
 const Input = (props: InputProps) => {
-  const { classes, label, type, placeholder, name, error } = props;
+  const { classes, label, phone, type, placeholder, name, error } = props;
 
   return (
     <FormGroup>
       <label>{label}</label>
-      <input
-        className={classes}
-        placeholder={placeholder}
-        type={type}
-        name={name}
-      />
+      {phone ? (
+        <div className="phone">
+          <PhoneInput country={'us'} />
+        </div>
+      ) : (
+        <input
+          className={classes}
+          placeholder={placeholder}
+          type={type}
+          name={name}
+        />
+      )}
+
       {error}
     </FormGroup>
   );

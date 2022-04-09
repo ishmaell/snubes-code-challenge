@@ -1,12 +1,28 @@
-.form-group {
+.form-group, .form-action {
   @apply mb-4 relative flex items-center gap-2;
+}
+
+.form-action {
+  @apply justify-center ml-[100px];
 }
 
 .form-group label {
   @apply block w-[120px] text-snubes-dark-gray text-[1.125rem];
 }
-.input {
-  @apply h-[3rem] w-full border-1 px-4 text-[1.125rem] outline-0 rounded;
+.input, .react-tel-input .form-control {
+  @apply h-[3rem] w-full border-1 border-gray-200 px-4 text-[1.125rem] outline-0 rounded !important;
+}
+
+.form-group .phone {
+  @apply w-full;
+}
+
+.react-tel-input {
+  @apply flex flex-row-reverse gap-4;
+}
+
+.react-tel-input .flag-dropdown {
+  @apply bg-transparent border-gray-200 rounded static w-[80px] flex justify-center !important;
 }
 
 .input.hasIcon {

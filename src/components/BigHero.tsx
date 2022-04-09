@@ -1,5 +1,6 @@
 import React from 'react';
 import Input from './Input';
+import Button from './Button';
 
 const BigHero: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const BigHero: React.FC = () => {
             <Input
               classes="input"
               type="text"
+              phone={true}
               label="Phone"
               placeholder="+49"
             />
@@ -33,6 +35,9 @@ const BigHero: React.FC = () => {
               label="E-mail"
               placeholder="name@mail.com"
             />
+            <div className="form-action">
+              <Button classes="button primary">Get informed</Button>
+            </div>
           </div>
         </div>
         <div className="stats">

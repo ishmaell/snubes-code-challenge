@@ -1,4 +1,5 @@
 module.exports = {
+  important: true,
   content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
   theme: {
     extend: {
@@ -10,6 +11,7 @@ module.exports = {
       },
       colors: {
         "snubes-dark-gray": "#445566",
+        "snubes-blue": "#0099ee"
       }
     },
   },
