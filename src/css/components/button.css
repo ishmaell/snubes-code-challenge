@@ -1,0 +1,23 @@
+.button {
+  @apply rounded text-center bg-transparent h-12 text-lg w-[17.5rem] font-bold;
+}
+
+.button:focus {
+  @apply outline-none;
+}
+
+.button:disabled {
+  @apply opacity-75 cursor-not-allowed;
+}
+
+.button.primary {
+  @apply bg-snubes-blue text-white;
+}
+
+.button.wide {
+  @apply w-full;
+}
+
+.button {
+  
+}
