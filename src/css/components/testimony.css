@@ -1,0 +1,14 @@
+.testimony {
+  @apply p-12 text-center bg-white;
+}
+.testimony .container {
+  @apply grid grid-cols-3 gap-5;
+}
+
+.testimony .quick-info {
+  @apply px-16;
+}
+
+.testimony .quick-info img {
+  @apply ml-auto mr-auto mb-5;
+}

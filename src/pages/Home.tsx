@@ -7,8 +7,6 @@ const Home: React.FC = () => {
   return (
     <div className="home-section">
       <BigHero />
-      <div className="features"></div>
-      <div className="why-snubes"></div>
       <Testimony />
       <FAQ />
     </div>
