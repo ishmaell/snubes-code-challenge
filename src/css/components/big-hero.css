@@ -1,5 +1,5 @@
 .big-hero {
-  @apply h-[506px] bg-red-100 bg-hero-bg bg-right text-snubes-dark-gray;
+  @apply h-[506px] bg-hero-bg bg-right text-snubes-dark-gray;
 }
 
 .big-hero .container {

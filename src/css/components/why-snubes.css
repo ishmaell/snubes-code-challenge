@@ -1,0 +1,22 @@
+.why-snubes {
+  @apply h-[600px] bg-why-snubes bg-right text-snubes-dark-gray;
+}
+
+.why-snubes-content {
+  @apply w-[38rem] m-auto py-[3.75rem];
+}
+
+.why-snubes-content h1 {
+  @apply text-3xl mb-10;
+}
+
+.why-snubes-content .reason {
+  @apply mb-10;
+}
+
+.why-snubes-content .reason h3 {
+  @apply text-xl mb-5;
+}
+.why-snubes-content .reason  p{
+  @apply text-lg;
+}

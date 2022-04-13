@@ -3,9 +3,9 @@ import icon1 from '../assets/images/icon-1.svg';
 import icon2 from '../assets/images/icon-2.svg';
 import icon3 from '../assets/images/icon-3.svg';
 
-const Testimony: React.FC = () => {
+const QuickIntro: React.FC = () => {
   return (
-    <div className="testimony">
+    <div className="quick-intro">
       <div className="container">
         <div className="quick-info">
           <img src={icon1} alt="Icon 1" />
@@ -35,4 +35,4 @@ const Testimony: React.FC = () => {
   );
 };
 
-export default Testimony;
+export default QuickIntro;
