@@ -1,0 +1,14 @@
+.quick-intro {
+  @apply p-12 text-center bg-white;
+}
+.quick-intro .container {
+  @apply grid grid-cols-3 gap-5;
+}
+
+.quick-intro .quick-info {
+  @apply px-16;
+}
+
+.quick-intro .quick-info img {
+  @apply ml-auto mr-auto mb-5;
+}

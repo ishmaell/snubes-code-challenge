@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-bg': "url('/src/assets/images/big-hero.png')",
+        'why-snubes': "url('/src/assets/images/why-banner.png')",
       },
       borderWidth: {
         1: "1px",

@@ -6,6 +6,8 @@
 @import "./components/button.css";
 @import "./components/form.css";
 @import "./components/header.css";
+@import "./components/why-snubes.css";
+@import "./components/quick-intro.css";
 @import "./layout/layout.css";
 
 * {

@@ -1,9 +1,10 @@
 .big-hero {
-  @apply h-[506px] bg-red-100 bg-hero-bg bg-right text-snubes-dark-gray;
+  @apply h-[506px] bg-hero-bg bg-right text-snubes-dark-gray;
 }
 
 .big-hero .container {
-  @apply flex justify-start gap-10 items-center h-full;
+  @apply flex flex-col justify-start gap-10 items-center h-full
+  lg:flex-row;
 }
 
 .big-hero .cta-card {
@@ -31,7 +32,8 @@
 }
 
 .big-hero .stats-info {
-  @apply grid grid-cols-4 gap-10 -ml-8;
+  @apply grid grid-cols-2 gap-10 -ml-8
+  lg:grid-cols-4;
 }
 
 .big-hero .stats-info-item {
