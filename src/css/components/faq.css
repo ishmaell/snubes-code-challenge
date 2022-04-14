@@ -1,0 +1,55 @@
+.faq {
+ @apply bg-white py-16;
+}
+
+.faq .container {
+  @apply w-[75rem] flex gap-10 justify-between;
+}
+
+.fax-text-content h2 {
+  @apply mb-10 text-2xl;
+}
+
+.fax-text-content .question {
+  @apply mb-10 text-lg;
+}
+
+.fax-text-content .question h4 {
+  @apply mb-3;
+}
+
+.fax-text-content .question p {
+  @apply text-lg;
+}
+
+.fax-text-content .stamp {
+  @apply h-[7.37rem] w-[7.37rem];
+}
+
+.faq-form-area {
+  @apply border-1 border-[#0099ee] w-[60rem] rounded-md;
+}
+
+.faq-form-area .header {
+  @apply bg-[#0099ee] rounded-tr-md rounded-tl-md text-center py-5;
+}
+
+.faq-form-area .header h2 {
+  @apply text-2xl text-white;
+}
+
+.faq-form {
+  @apply p-5
+}
+
+.faq-form .form-group {
+  @apply flex-col items-start mb-7;
+}
+
+.faq-form .form-group label {
+
+}
+
+.faq-form .form-action {
+  @apply ml-0 m-auto;
+}
