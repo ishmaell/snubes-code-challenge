@@ -2,6 +2,7 @@ import React from 'react';
 import BigHero from '../components/BigHero';
 import QuickIntro from '../components/QuickIntro';
 import WhySnubes from '../components/WhySnubes';
+import Testimony from '../components/Testimonies';
 import FAQ from '../components/FAQ';
 
 const Home: React.FC = () => {
@@ -10,6 +11,7 @@ const Home: React.FC = () => {
       <BigHero />
       <QuickIntro />
       <WhySnubes />
+      <Testimony />
       <FAQ />
     </div>
   );
