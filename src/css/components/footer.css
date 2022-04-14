@@ -1,0 +1,31 @@
+.footer {
+
+}
+
+.footer .container {
+  @apply w-[75rem];
+}
+
+.footer .top {
+  @apply bg-[#4a4a4a] py-14;
+}
+
+.footer-content {
+  @apply grid grid-cols-4 px-10;
+}
+
+.footer-content .stamp {
+  @apply w-[5.313rem] h-[5.313rem];
+}
+
+.footer-content .footer-item {
+  @apply flex flex-col gap-3;
+}
+
+.footer-content .footer-item a {
+  @apply text-white text-base font-medium;
+}
+
+.footer .copyright {
+  @apply bg-[#f9f9f9] py-10 text-center;
+}
