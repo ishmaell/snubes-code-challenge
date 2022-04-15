@@ -1,0 +1,23 @@
+.testimonies {
+  @apply bg-[#f9f9f9] py-12;
+}
+
+.testimony-content {
+  @apply w-[38rem] m-auto py-[3.75rem] text-center;
+}
+
+.testimony-content .attestant-image {
+  @apply h-8 ml-auto mr-auto mb-8;
+}
+
+.testimony-content .message {
+  @apply italic text-lg mb-8;
+}
+
+.testimony-content .attestant {
+  @apply  text-lg;
+}
+
+.partners {
+  @apply h-9 w-[75rem] m-auto;
+}
