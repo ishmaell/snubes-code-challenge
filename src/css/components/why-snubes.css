@@ -1,5 +1,5 @@
 .why-snubes {
-  @apply h-[600px] bg-why-snubes bg-right text-snubes-dark-gray;
+  @apply bg-none p-4 h-[600px] bg-right text-snubes-dark-gray lg:bg-why-snubes lg:p-0;
 }
 
 .why-snubes-content {

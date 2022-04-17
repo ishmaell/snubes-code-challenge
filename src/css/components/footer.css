@@ -3,7 +3,7 @@
 }
 
 .footer .container {
-  @apply w-[75rem];
+  @apply lg:w-[75rem];
 }
 
 .footer .top {
@@ -11,19 +11,23 @@
 }
 
 .footer-content {
-  @apply grid grid-cols-4 px-10;
+  @apply grid grid-cols-1 px-10 lg:grid-cols-4;
 }
 
 .footer-content .stamp {
-  @apply w-[5.313rem] h-[5.313rem];
+  @apply hidden w-[5.313rem] h-[5.313rem] lg:block;
 }
 
 .footer-content .footer-item {
-  @apply flex flex-col gap-3;
+  @apply flex flex-col gap-3 text-center lg:text-left;
 }
 
 .footer-content .footer-item a {
   @apply text-white text-base font-medium;
+}
+
+.footer-content .footer-item .socials {
+  @apply flex flex-row justify-center gap-4 lg:justify-start;
 }
 
 .footer .copyright {

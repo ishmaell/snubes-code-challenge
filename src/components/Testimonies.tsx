@@ -3,6 +3,7 @@ import { ITestimony } from '../models/ITestimony';
 import TestimonyItem from './TestimonyItem';
 import clientOne from '../assets/images/client-1.png';
 import partners from '../assets/images/partners.png';
+import partners2 from '../assets/images/partners-2.png';
 
 const Testimonies: React.FC = () => {
   const [testimonies, setTestimonies] = useState<ITestimony[]>([
@@ -32,7 +33,8 @@ const Testimonies: React.FC = () => {
           </ul>
         </div>
         <div className="partners">
-          <img src={partners} alt="Partners" />
+          <img className="partners-img" src={partners} alt="Partners" />
+          <img className="partners-img-mobile" src={partners2} alt="Partners" />
         </div>
       </div>
     </div>

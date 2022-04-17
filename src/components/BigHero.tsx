@@ -1,8 +1,11 @@
 import React from 'react';
 import Input from './Input';
 import Button from './Button';
+import useContactForm from '../hooks/ContactForm';
 
 const BigHero: React.FC = () => {
+  const { onSubmit, errors, isValid } = useContactForm();
+
   return (
     <section className="big-hero">
       <div className="container">
@@ -10,34 +13,78 @@ const BigHero: React.FC = () => {
           <h1>Find inbound call centers for your company</h1>
           <p>Use our AI and Big Data driven call center sourcing solution</p>
           <div className="cta-card-form">
-            <Input
-              classes="input"
-              type="text"
-              label="Company"
-              placeholder="Company"
-            />
-            <Input
-              classes="input"
-              type="text"
-              label="Name"
-              placeholder="Full name"
-            />
-            <Input
-              classes="input"
-              type="text"
-              phone={true}
-              label="Phone"
-              placeholder="+49"
-            />
-            <Input
-              classes="input"
-              type="text"
-              label="E-mail"
-              placeholder="name@mail.com"
-            />
-            <div className="form-action">
-              <Button classes="button primary">Get informed</Button>
-            </div>
+            <form onSubmit={onSubmit}>
+              <Input
+                error={
+                  errors.company && (
+                    <span className="error-message">
+                      {errors.company.message}
+                    </span>
+                  )
+                }
+                // register={register}
+                classes="input"
+                type="text"
+                label="Company"
+                placeholder="Company"
+                name="company"
+              />
+              <Input
+                error={
+                  errors.fullname && (
+                    <span className="error-message">
+                      {errors.fullname.message}
+                    </span>
+                  )
+                }
+                // register={register}
+                name="fullname"
+                classes="input"
+                type="text"
+                label="Name"
+                placeholder="Full name"
+              />
+              <Input
+                error={
+                  errors.phone && (
+                    <span className="error-message">
+                      {errors.phone.message}
+                    </span>
+                  )
+                }
+                // register={register}
+                classes="input"
+                type="text"
+                phone={true}
+                label="Phone"
+                placeholder="+49"
+                name="phone"
+              />
+              <Input
+                error={
+                  errors.email && (
+                    <span className="error-message">
+                      {errors.email.message}
+                    </span>
+                  )
+                }
+                // register={register}
+                classes="input"
+                type="text"
+                label="E-mail"
+                placeholder="name@mail.com"
+                name="email"
+              />
+              <div className="form-action">
+                <Button
+                  disabled={!isValid}
+                  type="submit"
+                  classes="button primary"
+                >
+                  Get informed
+                </Button>
+              </div>
+            </form>
           </div>
         </div>
         <div className="stats">

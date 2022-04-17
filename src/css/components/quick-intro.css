@@ -1,12 +1,16 @@
 .quick-intro {
-  @apply p-12 text-center bg-white;
+  @apply p-4 text-center bg-white lg:p-12 ;
 }
 .quick-intro .container {
-  @apply grid grid-cols-3 gap-5;
+  @apply grid grid-cols-1 gap-5 lg:grid-cols-3;
 }
 
 .quick-intro .quick-info {
-  @apply px-16;
+  @apply flex gap-4 lg:px-16 lg:gap-0;
+}
+
+.quick-intro .text-info {
+  @apply text-left lg:text-center;
 }
 
 .quick-intro .quick-info img {

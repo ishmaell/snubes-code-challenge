@@ -3,7 +3,11 @@
 }
 
 .testimony-content {
-  @apply w-[38rem] m-auto py-[3.75rem] text-center;
+  @apply  m-auto py-[3.75rem] text-center lg:w-[38rem];
+}
+
+.testimony-carosels {
+  @apply w-[75rem]
 }
 
 .testimony-content .attestant-image {
@@ -20,4 +24,12 @@
 
 .partners {
   @apply h-9 w-[75rem] m-auto;
+}
+
+.partners .partners-img {
+  @apply hidden lg:block;
+}
+
+.partners .partners-img-mobile {
+  @apply block h-[8.5rem] lg:hidden;
 }
