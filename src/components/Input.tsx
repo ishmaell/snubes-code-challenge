@@ -10,27 +10,28 @@ interface InputProps {
   name?: string;
   register?: any;
   error?: React.ReactNode;
-  hasIcon?: boolean;
-  iconName?: React.ReactNode;
-  toogleIcon?: React.MouseEventHandler;
 }
 
 const Input = (props: InputProps) => {
-  const { classes, label, phone, type, placeholder, name, error } = props;
+  const { classes, register, label, phone, type, placeholder, name, error } =
+    props;
 
   return (
     <FormGroup>
       <label>{label}</label>
       {phone ? (
         <div className="phone">
-          <PhoneInput country={'us'} />
+          <PhoneInput
+            // {...register(name)}
+            country={'us'}
+          />
         </div>
       ) : (
         <input
+          // {...register(name)}
           className={classes}
           placeholder={placeholder}
           type={type}
-          name={name}
         />
       )}
 
